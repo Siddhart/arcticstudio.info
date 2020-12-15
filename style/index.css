@@ -20,9 +20,13 @@ body, html {
     background-size: cover;
 }
 
+a {
+    color: rgb(152, 212, 236);
+}
+
 *::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .noSelect {
     -webkit-touch-callout: none;
@@ -39,7 +43,7 @@ body, html {
     position: fixed;
     height: 100%;
     width: 100%;
-    top: 90px;
+    top: 89px;
     overflow: auto;
 }
 
@@ -65,6 +69,10 @@ body, html {
     z-index: 10;
 }
 
+.header-content a {
+    text-decoration: none;
+}
+
 .logo {
     width: 52px;
     height: 52px;
@@ -80,6 +88,7 @@ body, html {
     left: 10px;
     width: 275px;
     z-index: 10;
+    color: white;
 }
 
 .ln {
@@ -206,4 +215,175 @@ body, html {
 
 .AboutUsParagraph p a {
     color: rgb(152, 212, 236);
+}
+
+/*Footer*/
+
+.footer {
+    height: fit-content;
+    background-color: black;
+    color: white;
+    padding-bottom: 100px;
+    margin-top: 250px;
+    text-align: center;
+}
+
+.footerIcons {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerIcons img {
+    width: 52px;
+    margin-top: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.footerIcons img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*RESPONSIVENESS FOR HOME PAGE*/
+
+@media screen and (max-width: 1000px) {
+    /*NAV*/
+
+    .logoName {
+        position: relative;
+        top: 9px;
+        left: 10px;
+        width: 275px;
+        z-index: 10;
+        color: white;
+        visibility: hidden;
+    }
+    /*END OF NAV*/
+}
+
+@media screen and (max-width: 700px) {
+    
+    .logo {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 1.75px solid white;
+        z-index: 10;
+        display: block;
+        float: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header {
+        position: fixed;
+        width: 75%;
+        border-bottom: 2px solid white;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: transparent;
+    }
+
+    .header-content {
+        padding: 0;
+        z-index: 10;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logoName {
+        position: relative;
+        top: 9px;
+        left: 10px;
+        width: 275px;
+        z-index: 10;
+        color: white;
+        visibility: hidden;
+    }
+    
+    .nav {
+        margin-top: -50px;
+        z-index: 10;
+        text-align: center;
+    }
+    
+    .nav a {
+        float: none;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+        z-index: 10;
+    }
+    
+    .nav .t:hover {
+        cursor: pointer;
+        color: rgb(185, 185, 185);
+        z-index: 10;
+    }
+
+    .hero {
+        top: 0;
+        width: 100%;
+        min-height: 500px;
+        height: 100%;
+        text-align: center;
+        position: relative;
+        margin-top: -90px;
+    }
+
+    .page {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 157px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .page {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 159px;
+        overflow: auto;
+    }
+
+    .hero .Title {
+        font-size: 25px;
+        font-weight: bolder;
+    }
+
+    .hero .Under {
+        margin-top:-15px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 313px) {
+    .page {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 165px;
+        overflow: auto;
+    }
+
+}
+
+@media screen and (max-width: 259px) {
+    .page {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 165px;
+        overflow: auto;
+    }
 }
