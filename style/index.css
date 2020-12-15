@@ -11,7 +11,7 @@ body, html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     color: white;
-    background-image: url("http://127.0.0.1:8008/Storage/background.png");
+    background-image: url("https://arcticstudio.netlify.app/Storage/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
