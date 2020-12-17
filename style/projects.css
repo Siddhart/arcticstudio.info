@@ -1,0 +1,175 @@
+.CardContainer{
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.Grid-Title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    .GRID {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .GRID2 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
+.CARD {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 250px;
+    height: 350px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    padding: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/*HOVER*/
+
+.CARD:hover {
+    border: 2px solid black;
+    /*2px solid rgba(255, 255, 255, 0.514);*/
+    background-color: #f0f0f0;
+    color: black;
+    transition: 0.5s;
+}
+
+.CARD:hover img {
+    border: 2px solid #f0f0f0;
+    transition: 0.5s;
+}
+
+.CARD:hover a p {
+    color: black;
+    border: 2px solid black;
+    transition: 0.5s;
+}
+
+/*HOVER*/
+
+.CARD-TITLE {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.CARD img {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 128px;
+    height: 128px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.CARD .DESC {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+
+    text-align: center;
+}
+
+.CARD a p {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color: #f0f0f0;
+}
+
+.CARD a {
+    text-decoration: none;
+}
+
+.CARD a p:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 1300px) {
+    .GRID {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .GRID2 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .GRID {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .GRID2 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .MORE-ABOUT-ME .TEXT {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+}
+
+
+.footer{
+    margin-top: 10px;
+}
