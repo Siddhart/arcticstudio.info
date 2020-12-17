@@ -194,17 +194,24 @@ a {
     font-size: 35px;
 }
 
+.users p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 /*ABOUT US*/
 
 .AboutUsTitle {
     text-align: center;
     font-size: 45px;
-    margin-top: 100px;
+    margin-top: 175px;
     font-weight: bolder;
 }
 
 .AboutUsParagraph {
     text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .AboutUsParagraph p {
@@ -221,9 +228,9 @@ a {
 
 .footer {
     height: fit-content;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.938);
     color: white;
-    padding-bottom: 125px;
+    padding-bottom: 110px;
     margin-top: 250px;
     text-align: center;
 }
@@ -340,10 +347,17 @@ a {
 
     .page {
         position: fixed;
-        height: 100%;
-        width: 100%;
         top: 157px;
         overflow: auto;
+    }
+
+    .footer {
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.938);
+    color: white;
+    padding-bottom: 175px;
+    margin-top: 250px;
+    text-align: center;
     }
 }
 
@@ -364,6 +378,25 @@ a {
     .hero .Under {
         margin-top:-15px;
         font-size: 20px;
+    }
+
+    .users p{
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 25px;
+    }
+
+    .hero .MoreButton {
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        padding: 10px 25px 10px 25px;
+        background-color: transparent;
+    }
+
+    .AboutUsParagraph p{
+        font-size: 18px;
     }
 }
 
