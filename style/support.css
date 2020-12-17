@@ -1,41 +1,45 @@
-.CardContainer{
-    width: 100%;
-    padding-bottom: 150px;
-}
-
-.Grid-Title{
-    text-align: center;
-    font-size: 35px;
-    font-weight: bolder;
-    margin-top: 50px;
-}
-
 @media only screen and (min-width: 600px) {
-    .GRID {
+    .GRID3 {
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /*CHANGE TO 2*/
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .GRID2 {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .GRID3 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .GRID3 {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+}
+
 
 .CARD {
     border: 2px solid white;
     border-radius: 15px;
     width: 250px;
-    height: 350px;
+    height: 310px;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -91,6 +95,8 @@
     margin-right: auto;
     border: 2px solid white;
     border-radius: 25px;
+
+    background-color: white;
 }
 
 .CARD .DESC {
@@ -122,54 +128,10 @@
     transition: 0.2s;
 }
 
-
-@media only screen and (max-width: 1300px) {
-    .GRID {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); /*CHANGE TO 2*/
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .GRID2 {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
+.AboutUsTitle{
+    margin-top: 75px;
 }
 
-@media only screen and (max-width: 650px) {
-    .GRID {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .GRID2 {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
-    }
-    .MORE-ABOUT-ME .TEXT {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 15px;
-    }
-}
-
-.footer{
-    margin-top: 10px;
+.CardContainer{
+    margin-top: 25px;
 }
