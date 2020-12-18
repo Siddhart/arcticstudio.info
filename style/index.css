@@ -24,9 +24,24 @@ a {
     color: rgb(152, 212, 236);
 }
 
-*::-webkit-scrollbar {
-    display: none;
+/*SCROLL BAR DESIGN*/
+::-webkit-scrollbar { 
+    width: 5px; 
+
+} 
+::-webkit-scrollbar-track { 
+    background: gainsboro; 
+    border-radius: 5px; 
+    margin-bottom: 89px;
+} 
+::-webkit-scrollbar-thumb { 
+    background: rgb(70, 70, 70); 
+    border-radius: 5px; 
 }
+::-webkit-scrollbar-thumb:hover { 
+    background: #555; 
+} 
+/*SCROLL BAR DESIGN*/
 
 .noSelect {
     -webkit-touch-callout: none;
@@ -355,6 +370,12 @@ a {
         top: 157px;
         overflow: auto;
     }
+
+    ::-webkit-scrollbar-track { 
+        background: gainsboro; 
+        border-radius: 5px; 
+        margin-bottom: 157px;
+    } 
 
     .footer {
     height: fit-content;
