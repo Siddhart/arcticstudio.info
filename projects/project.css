@@ -1,0 +1,126 @@
+.Project {
+    width: 100%;
+}
+
+.ProjectTitle {
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.ProjectImage {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    width: 150px;
+}
+
+.Invite {
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+.Invite button {
+    width: 125px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.Invite button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.Vote {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.Vote button {
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.Vote button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ProjectDescription {
+    text-align: center;
+    margin-top: 55px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.ProjectTable {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.TableUpperTitle {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: 20px
+}
+
+table, td, th {
+    border: 2px solid white;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.ProjectPreviewImage{
+    display: block;
+    width: 66%;
+
+    margin-top: 100px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .ProjectTable {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        width: 98%;
+    }
+    .ProjectPreviewImage{
+        display: block;
+        width: 100%;
+        margin-top: 100px;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
