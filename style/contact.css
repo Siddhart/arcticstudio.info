@@ -1,0 +1,84 @@
+.ContacTitle{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.ContactPar{
+    width: 100%;
+    text-align: center;
+}
+
+.Form{
+    display: block;
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+}
+
+.Inputsfields{
+    text-align: center;
+}
+
+.Inputsfields input{
+    width: 90%;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.Inputsfields textarea{
+    width: 90%;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.Inputsfields input:focus{
+    outline: none;
+}
+
+.inptitle{
+    margin-bottom: 5px;
+}
+
+.name{
+    height: 30px;
+}
+
+textarea{
+    height: 100px;
+    font-size: 16px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.submit{
+    width: fit-content;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.185);
+    color: white;
+}
+
+.submit button{
+    margin-top: 20px;
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.submit button:focus{
+    outline: none;
+}
+
+.submit button:hover{
+    cursor: pointer;
+}
