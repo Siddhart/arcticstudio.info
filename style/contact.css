@@ -78,7 +78,6 @@ textarea:focus{
 .submit button:focus{
     outline: none;
 }
-
 .submit button:hover{
     cursor: pointer;
 }
