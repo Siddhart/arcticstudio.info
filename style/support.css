@@ -34,6 +34,16 @@
     }
 }
 
+.BraveGrid{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
 
 .CARD {
     border: 2px solid white;
@@ -88,22 +98,18 @@
     display: block;
     margin-top: 15px;
     margin-bottom: 15px;
-    width: 128px;
-    height: 128px;
+    max-height: 130px;
+    max-width: 130px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid white;
-    border-radius: 25px;
-
-    background-color: white;
+    border: 2px solid transparent;
 }
 
 .CARD .DESC {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 16px;
-
     text-align: center;
 }
 
