@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: arcticstudio.info
+Token: 826a7a50765c8b09dd98dcedd20e6cdc90b4c8d882c5af46ff4faa39596dc206
