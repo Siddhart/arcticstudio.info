@@ -63,34 +63,37 @@
             <div class="Contact">
                 <p class="ContacTitle">Contact Us</p>
                 <div class="ContactPar">
-                    <p>For any non business related questions or concerns you can contact us in our <a href="https://discord.com/invite/wzF9qfC"
-                            target="_blank">discord server</a>.</p>
+                    <p>For any non business related questions or concerns you can contact us in our <a
+                            href="https://discord.com/invite/wzF9qfC" target="_blank">discord server</a>.</p>
                     <p>If you have any business related questions or concerns please fill out the form below.</p>
                 </div>
 
                 <div class="Form">
-                    <form class="Inputsfields">
+                    <div class="Inputsfields" id="InputFields">
                         <input type="hidden" name="form-name" value="contact" />
-                        <p class="inptitle">Name</p>
+                        <p class="inptitle">Email</p>
                         <input class="name" id="name" />
                         <br>
                         <p class="inptitle">Message</p>
                         <textarea class="message" id="message"></textarea>
-                        <a class="submit" onclick="changeMailTo()" id="SUBMIT">
+                        <a class="submit" onclick="SendMessage()">
                             <button>SUBMIT</button>
                         </a>
-                    </form>
+                    </div>
                 </div>
             </div>
 
             <div class="footer">
                 <div class="footerIcons noSelect">
-                    <a rel="noreferrer" href="https://discordapp.com/invite/wzF9qfC" target="_blank"><img class="invert" src="./storage/Discord.jpg" alt="Discord" /></a>
-                    <a rel="noreferrer" href="https://www.reddit.com/r/ArcticStudio/" target="_blank"><img class="invert" src="../storage/reddit.png" alt="Reddit" /></a>
+                    <a rel="noreferrer" href="https://discordapp.com/invite/wzF9qfC" target="_blank"><img class="invert"
+                            src="./storage/Discord.jpg" alt="Discord" /></a>
+                    <a rel="noreferrer" href="https://www.reddit.com/r/ArcticStudio/" target="_blank"><img
+                            class="invert" src="../storage/reddit.png" alt="Reddit" /></a>
                 </div>
                 <p><b>Contact:</b></p>
                 <p><b>Email</b> : info.arcticstudio[at]gmail.com (response 1-4 days)</p>
-                <p><b>Discord</b> : <a rel="noreferrer" href="https://discordapp.com/invite/wzF9qfC">join here</a> (response 1 day)</p>
+                <p><b>Discord</b> : <a rel="noreferrer" href="https://discordapp.com/invite/wzF9qfC">join here</a>
+                    (response 1 day)</p>
                 <p>Background by <a rel="noreferrer" href="https://unsplash.com/@anniespratt">anniespratt</a></p>
                 <p>Website by <a rel="noreferrer" href="https://www.siddhart.dev">Siddhart</a></p>
                 <p>&copy; Arctic Studio 2020</p>
@@ -101,10 +104,27 @@
 </html>
 
 <script>
-    function changeMailTo() {
-        const Subject = `Email from ${document.getElementById('name').value}`
+    function SendMessage() {
+        const Subject = `Message from ${document.getElementById('name').value}`
         const Body = document.getElementById('message').value
-        document.getElementById('SUBMIT').href = `mailto:info.arcticstudio@gmail.com?subject=${Subject}&body=${Body}`
+
+        try {
+            var object = 'aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvODA5MTg3MjQwOTY5NjMzODEyL2N5Qm1yanprUXFta2FfOG1fNEFibjQ2THEtUE9aa3J3ckQ3c0V4RURaNmg3QkZRd3p5djVjXzdTNUNUOE1pOXhaUWZV'
+            var request = new XMLHttpRequest();
+            request.open("POST", atob(object));
+            request.setRequestHeader('Content-type', 'application/json');
+            var CNT = `${Subject}\n${Body}\n\n${new Date()}`
+            var params = {
+                username: "Arctic Studio Web Form",
+                avatar_url: "https://cdn.discordapp.com/avatars/700283244880461854/c9d00a11e9bdbd2481a3d473c351daad.webp?size=128",
+                content: '```' + CNT + '```'
+            }
+            request.send(JSON.stringify(params));
+
+            document.getElementById('InputFields').innerHTML += `<p style="color:lightgreen; text-align:center">Message was successfully send!</p>`
+        } catch {
+            console.log("")
+        }
     }
 </script>
 
@@ -112,9 +132,9 @@
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RNL19R6SEM"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-RNL19R6SEM');
+    gtag('config', 'G-RNL19R6SEM');
 </script>
