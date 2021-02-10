@@ -24,23 +24,31 @@ a {
     color: rgb(152, 212, 236);
 }
 
-/*SCROLL BAR DESIGN*/
-::-webkit-scrollbar { 
-    width: 5px; 
-
-} 
-::-webkit-scrollbar-track { 
-    background: gainsboro; 
-    border-radius: 5px; 
-    margin-bottom: 89px;
-} 
-::-webkit-scrollbar-thumb { 
-    background: rgb(70, 70, 70); 
-    border-radius: 5px; 
+a:hover{
+    cursor: pointer;
 }
-::-webkit-scrollbar-thumb:hover { 
-    background: #555; 
-} 
+
+/*SCROLL BAR DESIGN*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+    margin-bottom: 89px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(70, 70, 70);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 /*SCROLL BAR DESIGN*/
 
 .noSelect {
@@ -128,7 +136,7 @@ a {
     z-index: 10;
 }
 
-.nav a:hover{
+.nav a:hover {
     cursor: pointer;
     color: rgb(168, 168, 168);
 }
@@ -214,7 +222,7 @@ a {
     font-size: 35px;
 }
 
-.users p{
+.users p {
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -277,7 +285,6 @@ a {
 
 @media screen and (max-width: 1000px) {
     /*NAV*/
-
     .logoName {
         position: relative;
         top: 9px;
@@ -291,7 +298,6 @@ a {
 }
 
 @media screen and (max-width: 700px) {
-    
     .logo {
         width: 52px;
         height: 52px;
@@ -304,7 +310,6 @@ a {
         margin-left: auto;
         margin-right: auto;
     }
-
     .header {
         position: fixed;
         width: 75%;
@@ -315,14 +320,12 @@ a {
         margin: auto;
         background-color: transparent;
     }
-
     .header-content {
         padding: 0;
         z-index: 10;
         padding: 0;
         margin: 0;
     }
-    
     .logoName {
         position: relative;
         top: 9px;
@@ -332,13 +335,11 @@ a {
         color: white;
         visibility: hidden;
     }
-    
     .nav {
         margin-top: -50px;
         z-index: 10;
         text-align: center;
     }
-    
     .nav a {
         float: none;
         text-align: center;
@@ -348,13 +349,11 @@ a {
         text-decoration: none;
         z-index: 10;
     }
-    
     .nav .t:hover {
         cursor: pointer;
         color: rgb(185, 185, 185);
         z-index: 10;
     }
-
     .hero {
         top: 0;
         width: 100%;
@@ -364,26 +363,23 @@ a {
         position: relative;
         margin-top: -90px;
     }
-
     .page {
         position: fixed;
         top: 157px;
         overflow: auto;
     }
-
-    ::-webkit-scrollbar-track { 
-        background: gainsboro; 
-        border-radius: 5px; 
+    ::-webkit-scrollbar-track {
+        background: gainsboro;
+        border-radius: 5px;
         margin-bottom: 157px;
-    } 
-
+    }
     .footer {
-    height: fit-content;
-    background: rgba(0, 0, 0, 0.938);
-    color: white;
-    padding-bottom: 175px;
-    margin-top: 250px;
-    text-align: center;
+        height: fit-content;
+        background: rgba(0, 0, 0, 0.938);
+        color: white;
+        padding-bottom: 175px;
+        margin-top: 250px;
+        text-align: center;
     }
 }
 
@@ -395,23 +391,19 @@ a {
         top: 159px;
         overflow: auto;
     }
-
     .hero .Title {
         font-size: 25px;
         font-weight: bolder;
     }
-
     .hero .Under {
-        margin-top:-15px;
+        margin-top: -15px;
         font-size: 20px;
     }
-
-    .users p{
+    .users p {
         margin-left: 5px;
         margin-right: 5px;
         font-size: 25px;
     }
-
     .hero .MoreButton {
         border: 2px solid white;
         border-radius: 10px;
@@ -420,8 +412,7 @@ a {
         padding: 10px 25px 10px 25px;
         background-color: transparent;
     }
-
-    .AboutUsParagraph p{
+    .AboutUsParagraph p {
         font-size: 18px;
     }
 }
@@ -434,7 +425,6 @@ a {
         top: 165px;
         overflow: auto;
     }
-
 }
 
 @media screen and (max-width: 259px) {
@@ -445,4 +435,12 @@ a {
         top: 165px;
         overflow: auto;
     }
+}
+
+.DiscordEmbed {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
