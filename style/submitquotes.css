@@ -1,0 +1,27 @@
+.submit-title {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 65px
+}
+
+input {
+    text-align: center;
+    color: #fff
+}
+
+textarea {
+    color: #fff;
+    text-align: center
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, .541)
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .541)
+}
+
+.makesure-text{
+    text-align: center;
+}
