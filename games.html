@@ -44,7 +44,10 @@
 <script>
     var is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
 
-    if(is_mobile) return window.location.replace('/')
+    if(is_mobile){
+        window.location.replace('/')
+        return
+        }
     window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 </script>
 
