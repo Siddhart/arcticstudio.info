@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () =>{
-    document.getElementById('SETUP').innerText = "awdawd"
+    document.getElementById('SETUP').innerText = "5500000"
 })
 
 var DidCount = false
