@@ -16,5 +16,5 @@ document.getElementById("page").onscroll = function() {
 };
 
 function REPLACE(){
-    document.getElementById('SETUP').innerHTML = '<b>2.500.000</b>+ users use our services/bots</p>'
+    document.getElementById('SETUP').innerHTML = '<b>5.500.000</b>+ users use our services/bots</p>'
 }
