@@ -10,7 +10,7 @@ document.getElementById("page").onscroll = function() {
         COUNT()
         setTimeout(() => {
             REPLACE()
-        }, 4000);
+        }, 1750);
 
     }
 };
